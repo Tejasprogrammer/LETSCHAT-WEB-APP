@@ -1,21 +1,24 @@
 
 // Your web app's Firebase configuration
-var firebaseConfig = {
-      apiKey: "AIzaSyC5kMZ7wvJpLAT9u7Z8YBKV59XjF-aqqRE",
-      authDomain: "project-93-letschat-web-app-1.firebaseapp.com",
-      databaseURL: "https://project-93-letschat-web-app-1-default-rtdb.firebaseio.com",
-      projectId: "project-93-letschat-web-app-1",
-      storageBucket: "project-93-letschat-web-app-1.appspot.com",
-      messagingSenderId: "599747272052",
-      appId: "1:599747272052:web:04fa716f9c059b29902021"
+const firebaseConfig = {
+      apiKey: "AIzaSyCLwTlRj9FNKhuDWqpD3YjI8hulgqDueg0",
+      authDomain: "kwitter-76ee3.firebaseapp.com",
+      databaseURL: "https://kwitter-76ee3-default-rtdb.firebaseio.com",
+      projectId: "kwitter-76ee3",
+      storageBucket: "kwitter-76ee3.appspot.com",
+      messagingSenderId: "983913753488",
+      appId: "1:983913753488:web:28991fe1d502c04275a115"
     };
+    
     // Initialize Firebase
     firebase.initializeApp(firebaseConfig);
+
 
       user_name = localStorage.getItem("Username");
       document.getElementById("welcome_user_name").innerHTML = "Welcome "+user_name+"!";
 
-      function addroom() {
+      function addroom()
+       {
              room_name = document.getElementById("room_name").value;
     
             localStorage.setItem("Roomname",room_name);
