@@ -11,7 +11,6 @@ const firebaseConfig = {
       // Initialize Firebase
       firebase.initializeApp(firebaseConfig);
 
-
 function adduser() {
         user_name = document.getElementById("user_name").value;
     
